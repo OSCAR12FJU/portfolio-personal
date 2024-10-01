@@ -1,5 +1,5 @@
 import Nextjs from "../icons/Nextjs";
-import TailwindCSS from "../icons/TailwindCss";
+import Tailwindcss from "../icons/Tailwindcss";
 
 const TAGS = {
   NEXT: {
@@ -10,7 +10,7 @@ const TAGS = {
   TAILWIND: {
     name: 'Tailwind CSS',
     className: 'bg-[#003159] text-white ',
-    icon: <TailwindCSS />
+    icon: <Tailwindcss />
   },
 };
 
