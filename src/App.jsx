@@ -13,7 +13,7 @@ function App() {
     <>
     <Header />
     <main className='px-4'>
-     <SectionContainer className='py-44 pb-24'>
+     <SectionContainer className='py-16 md:py-36 scroll-m-20 pb-24'>
       <Presentation /> 
      </SectionContainer>
      <SectionContainer id="experiencie">

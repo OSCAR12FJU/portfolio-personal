@@ -24,10 +24,10 @@ const Experience = () =>{
     console.log(ExperienceIT)
       
 return(
-    <ol className="relative border-s border-gray-200 ml-3">  
+    <ol className="relative mt-16">  
     {
         ExperienceIT.map((exp, index) => (
-            <li key={index} className="mb-10 ms-4 text-left">
+            <li key={index} className="text-left">
               <ExperienceItem {... exp} />
             </li>
             

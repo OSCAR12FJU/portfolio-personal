@@ -7,16 +7,24 @@ import OscarLogo from "../files/OscarLogo.png"
 const Presentation = () =>{
     return(
       <>
+      <div className="flex gap-4 mb-4">
       <img 
-      className="rounded-full size-12 mb-4" 
+      className="rounded-full size-16 shadow-lg" 
       src={OscarLogo}
       alt="Oscar Flores" /> 
-      <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">¡Hola! Soy Oscar👋 <a href="https://www.linkedin.com/in/oscar-flores-6ba815260/"
+      <a href="https://www.linkedin.com/in/oscar-flores-6ba815260/"
       target="_blank"
       rel="noopener"
-      className="flex justify-center items-center"><Badge text="Disponible para trabajar"/>
+      className="flex md:justify-center items-center md:hover:scale-105">
+        <div className="flex items-center">
+        <Badge text="Disponible para trabajar"/>
+        </div>
         </a>
+
+      </div>
+      <h1 className="text-white text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">¡Hola! Soy Oscar👋 
       </h1>
+      
       <h2 className="text-xl lg:text-2xl text-wrap text-white text-left max-w-[700px]">Un desarrollador Fullstack apasionado por crear soluciones robustas. Especializado en Golang 💪, gestiono bases de datos y diseño interfaces frontend.🚀 </h2>
 
       <nav className="flex gap-4 mt-8 flex-wrap">
