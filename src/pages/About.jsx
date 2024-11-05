@@ -1,4 +1,4 @@
-import Amistades from "../files/amistades.jpg"
+import Amistades from "../files/Amistades.jpg"
 
 const About = () =>{
     return (
