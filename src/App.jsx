@@ -15,25 +15,25 @@ function App() {
     <Header />
     <main className='px-4'>
      <SectionContainer className='py-16 md:py-36 scroll-m-20 pb-24'>
-      <Presentation /> 
+      <Presentation id="Contact" /> 
      </SectionContainer>
-     <SectionContainer id="experiencie">
-      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white'>
+     <SectionContainer >
+      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="Experiencie">
       <BriefCase className="size-7"/>
       Experiencia laboral
       </h2>
       <Experience />
      </SectionContainer>
   
-     <SectionContainer id="project" title="Proyectos">
-     <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white'>
+     <SectionContainer title="Proyects">
+     <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="Project" >
      <Code className="size-8"/>
       Proyectos
     </h2>
       <Projects />
      </SectionContainer>
-     <SectionContainer id="project" title="Proyectos">
-     <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white'>
+     <SectionContainer title="Proyectos">
+     <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="About">
      <Code className="size-8"/>
       Sobre mí
     </h2>

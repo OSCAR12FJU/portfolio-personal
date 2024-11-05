@@ -6,10 +6,10 @@ import OscarFloreCV from "../files/OscarFloresCV.pdf"
 import { Download } from "../icons/Download";
 
 
-const Presentation = () =>{
+const Presentation = ({id}) =>{
     return(
       <>
-      <div className="flex gap-4 mb-4">
+      <div className="flex gap-4 mb-4" id={id}>
       <img 
       className="rounded-full size-16 shadow-lg shadow-white" 
       src={OscarLogo2}
@@ -31,16 +31,16 @@ const Presentation = () =>{
       <h2 className="text-lg text-wrap text-white text-left md:max-w-[700px]">Soy Oscar Flores de Buenos Aires 🇦🇷. Lo que más puedo remarcar en mi experiencia en el mundo IT es mi compromiso con la investigación 🔍 y el desarrollo de soluciones eficientes 💡. Busco siempre un alto nivel de precisión y calidad en cada proyecto, explorando distintas metodologías y tecnologías emergentes 🚀 para lograr resultados innovadores y efectivos. Tengo un enfoque orientado a la mejora continua 🔄.</h2>
       </div>
 
-      <nav className="flex gap-4 mt-8 flex-wrap">
-          <a className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-xs lg:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition " href="">
+      <nav className="flex gap-4 mt-8 flex-wrap" id={id}>
+          <a className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition " href="">
             <LinkedIn className="size-4 md:size-6 w-6 h-6" />
             LinkedIn
            </a>
-          <a className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-xs lg:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition" href="">
+          <a className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition" href="">
             <Github className="size-4 md:size-6 w-6 h-6" />
             GitHub
            </a>
-           <a type="button" className="inline-flex items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 bg-transparent rounded-full border border-white/10 text-xs lg:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition" href={OscarFloreCV} download="Oscar Flores CV">
+           <a type="button" className="inline-flex items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 bg-transparent rounded-full border border-white/10 text-sm md:text-base bg-white/5 hover:scale-110 hover:bg-white/10 transition" href={OscarFloreCV} download="Oscar Flores CV">
            <Download className="size-4 md:size-6 w-6 h-6"/>
             Descargar CV
             </a>
