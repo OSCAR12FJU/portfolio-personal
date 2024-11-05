@@ -7,6 +7,7 @@ import Footer from './Footer/Footer'
 import Projects from './pages/Projects'
 import Code from './icons/Code'
 import Experience from './pages/Experience'
+import About from './pages/About'
 
 function App() {
   return (
@@ -30,6 +31,13 @@ function App() {
       Proyectos
     </h2>
       <Projects />
+     </SectionContainer>
+     <SectionContainer id="project" title="Proyectos">
+     <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white'>
+     <Code className="size-8"/>
+      Sobre mí
+    </h2>
+      <About />
      </SectionContainer>
     </main>
     <Footer />

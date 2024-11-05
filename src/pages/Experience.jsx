@@ -3,22 +3,23 @@ import ExperienceItem from "../components/ExperienceItem";
 const Experience = () =>{
     const ExperienceIT = [
         {
-          date: "February 2022",
-          title: "Application UI code in Tailwind CSS",
-          description: "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-          link: ""
+          date: "Marzo 2023",
+          title: "Desarrollador Web",
+          description: [
+            "Desarrollos totalmente adaptativos y personalizados según las necesidades del cliente,abarcando la creación de interfaces responsivas, la configuración de servidores optimizados y el desarrollo de funcionalidades específicas para cada proyecto.",
+            "Optimización en E-commerce para tiendas y plataformas de e-learning, implementando estrategias de SEO y optimización de imágenes para maximizar la velocidad de carga y mejorar la experiencia del usuario."
+          ],
+          subTitle: "Reckless"
         },
         {
-          date: "March 2022",
-          title: "Marketing UI design in Figma",
-          description: "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
-          link: ""
-        },
-        {
-          date: "April 2022",
-          title: "E-Commerce UI code in Tailwind CSS",
-          description: "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
-          link:""
+          date: "Julio 2022",
+          title: "Desarrollador Web",
+          description:[
+            "Desarrollador web, lideré todo el ciclo de desarrollo, desde el diseño frontend hasta el despliegue en producción y la gestión de servidores.",
+            "Tecnologias utilizadas JavaScript, PHP, MySQL, Wordpress, CSS, Hostinger y Figma.",
+            'Comunicación efectiva con el equipo de diseño, adaptando cada desarrollo web a un estándar de alta exigencia en diseño, con implementación "pixel perfect" y funcionalidad dinámica optimizada.'
+          ] ,
+          subTitle:"Servant Argentina"
         }
       ];
     console.log(ExperienceIT)

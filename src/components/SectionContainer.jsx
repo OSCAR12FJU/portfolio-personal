@@ -4,7 +4,7 @@ const SectionContainer = ({ children, className = '', ...props }) => {
 
     return(
     <>
-    <section className={`${className} w-full mx-auto container lg:max-w-4xl md:max-w-2xl pb-24`} {...props}>
+    <section className={`${className} max-w-lg mx-auto container md:max-w-4xl pb-24`} {...props}>
      {children} 
     </section>
     </>
