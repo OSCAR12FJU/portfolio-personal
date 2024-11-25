@@ -8,6 +8,9 @@ import Projects from './pages/Projects'
 import Code from './icons/Code'
 import Experience from './pages/Experience'
 import About from './pages/About'
+import { BrainIcon } from './icons/BrainIcon'
+import { Skills } from './pages/Skills'
+import { AboutIcon } from './icons/AboutIcon'
 
 function App() {
   return (
@@ -24,6 +27,14 @@ function App() {
       </h2>
       <Experience />
      </SectionContainer>
+
+     <SectionContainer >
+      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="Experiencie">
+      <BrainIcon className="size-9"/>
+       Tecnologias
+      </h2>
+      <Skills />
+     </SectionContainer>
   
      <SectionContainer title="Proyects">
      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="Project" >
@@ -34,7 +45,7 @@ function App() {
      </SectionContainer>
      <SectionContainer title="Proyectos">
      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3  items-center text-white' id="About">
-     <Code className="size-8"/>
+     <AboutIcon className="size-8"/>
       Sobre mí
     </h2>
       <About />
