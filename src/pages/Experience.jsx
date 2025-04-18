@@ -1,4 +1,5 @@
 import ExperienceItem from "../components/ExperienceItem";
+import BriefCase from '../icons/BriefCase'
 
 const Experience = () =>{
     const ExperienceIT = [
@@ -25,6 +26,14 @@ const Experience = () =>{
     console.log(ExperienceIT)
       
 return(
+  <section id="Experience" className="min-h-[90vh] flex items-center pt-16 pb-10">
+    <div className="relative container">
+
+      <h2 className='text-3xl font-semibold mb-10 flex gap-x-3 items-center' id="Experiencie">
+       <BriefCase className="size-7"/>
+        Experiencia laboral
+      </h2>
+
     <ol className="relative mt-16">  
     {
         ExperienceIT.map((exp, index) => (
@@ -36,6 +45,11 @@ return(
     }
                    
     </ol>
-    )}
+    </div>
+
+
+    </section>
+    )
+  }
 
 export default Experience;

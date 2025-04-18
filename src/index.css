@@ -5,55 +5,217 @@
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: "Onest Variable", system-ui, sans-serif;
-
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth; 
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+  /* body {
+    @apply bg-background text-foreground;
+  } */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    /* Tema claro */
+    --background: 0 0% 100%;         /* Blanco */
+    --foreground: 222 84% 4.9%;      /* Azul muy oscuro */
+    
+    --card: 0 0% 100%;               /* Blanco */
+    --card-foreground: 222 84% 4.9%; /* Igual que foreground */
+    
+    --primary: 195 83% 49%;          /* Azul Portainer ≈ #18a4e3 */
+    --primary-foreground: 0 0% 100%; /* Blanco */
+    
+    --border: 214.3 31.8% 91.4%;     /* Gris claro */
+    
+    /* Otros colores que mencionaste */
+    --destructive: 0 84.2% 60.2%;
+    --input: 214.3 31.8% 91.4%;      /* Igual que border */
+
+    --muted-foreground: 215.4 16.3% 46.9%; /*Texto secundario*/
+  }
+
+  .dark {
+    /* Tema oscuro */
+    --background: 221 45% 11%;       /* Azul muy oscuro ≈ #0e1626 */
+    --foreground: 0 0% 100%;         /* Blanco */
+    
+    --card: 221 45% 13%;             /* Azul oscuro ≈ #121d33 */
+    --card-foreground: 0 0% 100%;    /* Blanco */
+    
+    --primary: 195 83% 49%;          /* Azul Portainer (igual que claro) */
+    --primary-foreground: 0 0% 100%; /* Blanco */
+    
+    --border: 221 39% 16%;           /* Azul grisáceo oscuro ≈ #1a2438 */
+    
+    /* Otros colores oscuros */
+    --destructive: 0 62.8% 30.6%;
+    --input: 221 39% 18%;            /* Similar a border pero más claro */
+
+    --muted-foreground: 210 40% 80%; /*Texto secundario*/
+
+  }
+
+  /* Better font sizing for mobile */
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl;
+  }
+
+  p {
+    @apply text-sm sm:text-base;
+  }
 }
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+
+  /* Adjust section padding on mobile */
+  section {
+    @apply py-12;
+  }
+
+  /* Add more space around mobile menu items */
+  .mobile-menu-item {
+    @apply py-3;
+  }
+
+  /* Improve form elements on mobile */
+  input, textarea, button {
+    @apply text-base py-3;
+  }
+
+  /* Better spacing for stacked elements */
+  .space-y-8 {
+    @apply space-y-6;
+  }
+
+  /* Adjust mobile swiper arrows position */
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply w-8 h-8;
+  }
+
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    @apply h-4 w-4;
+  }
+}
+
+/* Small mobile fixes */
+@media (max-width: 480px) {
+  .container {
+    @apply px-3;
+  }
+
+  /* Make buttons stack better on extra small screens */
+  .flex-wrap {
+    @apply gap-2;
+  }
+
+  /* Reduce heading sizes further */
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  /* Adjust the hero content for very small screens */
+  #home .grid {
+    @apply gap-6;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl;
+  }
+
+  p {
+    @apply text-sm sm:text-base;
+  }
+} */
 
 body{
   display: flex;
   flex-direction: column;
-  color:#fff;
+  /* color:#fff; */
   min-height: 100vh;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     ellipse 80% 80% at 50% -20%,
-  rgba(36, 43, 69, 1), /* Color inicial (#1B1E36) */
-    rgba(3, 7, 18, 1));
+  rgba(36, 43, 69, 1), 
+    rgba(3, 7, 18, 1)); */
+  /* background-color: rgb(14 22 38); */
+  /* background-color: hsl(221 45% 11%); */
   width: 100vw;
   overflow-x: hidden;
 }
 
 
-/* a {
-  font-weight: 500;
-  color: #fff;
-  text-decoration: inherit;
+@media (max-width: 480px) {
+  .container {
+    @apply px-3;
+  }
+
+  /* Make buttons stack better on extra small screens */
+  .flex-wrap {
+    @apply gap-2;
+  }
+
+  /* Reduce heading sizes further */
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  /* Adjust the hero content for very small screens */
+  /* #home .grid {
+    @apply gap-6;
+  } */
 }
-a:hover {
-  color: #535bf2;
-} */
-
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -64,36 +226,7 @@ h3, h4{
 
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 ::before{
-  border-color: #ffffff26!important;
+  border-color: hsl(var(--border))!important
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  /* a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  } */
-}
+
