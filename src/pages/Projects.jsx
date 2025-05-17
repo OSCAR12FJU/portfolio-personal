@@ -6,6 +6,7 @@ import { ReactIcon } from "../icons/ReactIcon";
 import { TailwindIcon } from "../icons/TailwinIcon";
 import InventoryBook from "../files/InventoryBook.png";
 import ServantTienda from "../files/ServantTienda.png"
+import OnlineInacart from "../files/OnlineInacart.png"
 
 import { TsIcon } from "../icons/TsIcon";
 import Code from "../icons/Code";
@@ -67,6 +68,14 @@ const PROJECTS = [
     link: 'https://e-ccommerce-servant.vercel.app/',
     github: 'https://github.com/OSCAR12FJU/e-ccommerce-servant',
     image: InventoryBook,
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.GOLANG],
+  },
+  {
+    title: 'E-ccomerce Inacart',
+    description: 'Tienda online organizada por categorías, con funcionalidades completas y diseño responsivo que garantiza buena experiencia en todos los dispositivos. Página de producto con lógica clara y fácil navegación.',
+    link: 'https://front-eccomerce-rose.vercel.app/',
+    github: 'https://github.com/OSCAR12FJU/front-eccomerce',
+    image: OnlineInacart,
     tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.GOLANG],
   },
 ];
