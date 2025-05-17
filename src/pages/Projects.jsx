@@ -76,7 +76,7 @@ const PROJECTS = [
     link: 'https://front-eccomerce-rose.vercel.app/',
     github: 'https://github.com/OSCAR12FJU/front-eccomerce',
     image: OnlineInacart,
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.GOLANG],
+    tags: [TAGS.REACT, TAGS.TAILWIND,TAGS.TYPESCRIPT],
   },
 ];
 
