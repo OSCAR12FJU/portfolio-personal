@@ -7,6 +7,7 @@ import { TailwindIcon } from "../icons/TailwinIcon";
 import InventoryBook from "../files/InventoryBook.png";
 import ServantTienda from "../files/ServantTienda.png"
 import OnlineInacart from "../files/OnlineInacart.png"
+import Fultbol11Link from "../files/OnlineInacart.png"
 
 import { TsIcon } from "../icons/TsIcon";
 import Code from "../icons/Code";
@@ -76,6 +77,14 @@ const PROJECTS = [
     link: 'https://front-eccomerce-rose.vercel.app/',
     github: 'https://github.com/OSCAR12FJU/front-eccomerce',
     image: OnlineInacart,
+    tags: [TAGS.REACT, TAGS.TAILWIND,TAGS.TYPESCRIPT],
+  },
+  {
+    title: 'Futbol11Link',
+    description: 'Este en un plataforma de videojuego que desafia nuestras habilidades futbolisticas, teniendo que adivinar que jugador esta escondido atraves de pistas que son antiguos e actuales compañeros de equipo.',
+    link: 'https://football-link-bice.vercel.app/',
+    github: 'https://github.com/OSCAR12FJU/footballLink.git',
+    image: Fultbol11Link,
     tags: [TAGS.REACT, TAGS.TAILWIND,TAGS.TYPESCRIPT],
   },
 ];
