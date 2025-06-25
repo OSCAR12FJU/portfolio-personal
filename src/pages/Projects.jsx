@@ -7,7 +7,7 @@ import { TailwindIcon } from "../icons/TailwinIcon";
 import InventoryBook from "../files/InventoryBook.png";
 import ServantTienda from "../files/ServantTienda.png"
 import OnlineInacart from "../files/OnlineInacart.png"
-import Fultbol11Link from "../files/OnlineInacart.png"
+import Fultbol11Link from "../files/Futbol11Link.png"
 
 import { TsIcon } from "../icons/TsIcon";
 import Code from "../icons/Code";
