@@ -138,12 +138,12 @@ const Projects = () =>{
 
             </div>
             <div className="flex items-center justify-between pt-0 p-6">
-            <a className="rounded-xl border-1.5 border-border bg-background  flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base hover:bg-primary hover:scale-110 transition" href="">
+            <a className="rounded-xl border-1.5 border-border bg-background  flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base hover:bg-primary hover:scale-110 transition" href={github}>
             <Github className="size-4 md:size-6 w-6 h-6" />
             GitHub
            </a>
 
-            <a target="_blank" className="rounded-xl bg-primary flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base hover:scale-110  font-medium transition text-white/90" href="#">
+            <a target="_blank" className="rounded-xl bg-primary flex justify-center items-center gap-x-2 py-3 px-3 md:py-2 md:px-4 text-sm md:text-base hover:scale-110  font-medium transition text-white/90" href={link}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-link h-5 w-5 "><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
             Demo
             </a>
